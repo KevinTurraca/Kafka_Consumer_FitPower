@@ -24,6 +24,7 @@ public class KafkaConsumer {
         Map<String, String> props = new HashMap<>();
         String bootstrapAddress = "localhost:9092";
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapAddress);
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, "group1");
         props.put(JsonSerializer.TYPE_MAPPINGS, "com.gym.fit_power:com.gym.fit_power.notification.event.Event");
         final JsonDeserializer<Event<?>> deserializer = new JsonDeserializer<>();
         return new DefaultKafkaConsumerFactory(props, new StringDeserializer(), deserializer);
