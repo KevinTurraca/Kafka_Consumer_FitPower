@@ -1,9 +1,9 @@
-package com.gym.fit_power.dto;
+package com.gym.fit_power.dto.event;
 
 import lombok.Data;
 
 @Data
-public class CustomerCreatedEventDTO {
+public class TrainerCreatedEventDTO {
     private String name;
     private String lastname;
     private String cuit;
