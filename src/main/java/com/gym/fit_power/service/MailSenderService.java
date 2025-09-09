@@ -1,4 +1,4 @@
-package com.gym.fit_power.notification;
+package com.gym.fit_power.service;
 
 import org.springframework.stereotype.Component;
 import org.springframework.mail.SimpleMailMessage;
